@@ -83,6 +83,10 @@
       SURFACE_PRO3_BUTTON = module;
       SURFACE_GPE = module;
       SURFACE_BOOK1_DGPU_SWITCH = module;
+
+      ## buildin pinctrl driver to prevent moduling loading race condition
+      ## https://github.com/linux-surface/linux-surface/issues/1392#issuecomment-1989558759
+      PINCTRL_SUNRISEPOINT = yes;
     };
   }
   {
